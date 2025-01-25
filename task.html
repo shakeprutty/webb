@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Fitness Tasks</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    .task-list {
+      margin-top: 30px;
+    }
+
+    .task-item {
+      background-color: #fff;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .task-item:hover {
+      background-color: #f1f1f1;
+    }
+
+    footer {
+      margin-top: 30px;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Today's Fitness Tasks</h1>
+    <p>Stay active and healthy! Click on a task to get started.</p>
+  </header>
+
+  <div class="task-list">
+    <div class="task-item" onclick="redirectTask('stretch')">
+      <h3>Morning Stretch</h3>
+      <p>Start your day with a 10-minute stretch.</p>
+    </div>
+
+    <div class="task-item" onclick="redirectTask('walk')">
+      <h3>Walk 10,000 Steps</h3>
+      <p>Get moving and aim for 10,000 steps today.</p>
+    </div>
+
+    <div class="task-item" onclick="redirectTask('hydrate')">
+      <h3>Hydrate Yourself</h3>
+      <p>Drink at least 8 glasses of water today.</p>
+    </div>
+
+    <div class="task-item" onclick="redirectTask('strength')">
+      <h3>Strength Training</h3>
+      <p>Complete a 20-minute bodyweight workout.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 StayFit App</p>
+  </footer>
+
+  <script>
+    function redirectTask(task) {
+      // Redirect to different pages based on the task
+      if (task === 'stretch') {
+        window.location.href = 'stretch.html'; // Link to the stretch task page
+      } else if (task === 'walk') {
+        window.location.href = 'walk.html'; // Link to walking tracker page
+      } else if (task === 'hydrate') {
+        window.location.href = 'hydrate.html'; // Link to hydration tracker page
+      } else if (task === 'strength') {
+        window.location.href = 'strength.html'; // Link to strength workout page
+      }
+    }
+  </script>
+
+</body>
+</html>

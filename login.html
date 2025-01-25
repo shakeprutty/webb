@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Health Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">HealthTracker</h1>
+            <div class="nav-links">
+                <a href="index.html" class="btn">Home</a>
+                <a href="signup.html" class="btn">Signup</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="login">
+        <section class="form-section">
+            <h2>Login</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="btn login-button">Login</button>
+            </form>
+        </section>
+
+        <section class="health-info">
+            <h3>Enter Health Information</h3>
+            <form id="health-form">
+                <div class="form-group">
+                    <label for="bp">Blood Pressure (mmHg):</label>
+                    <input type="number" id="bp" name="bp" placeholder="e.g., 120">
+                </div>
+                <div class="form-group">
+                    <label for="sugar">Blood Sugar Level (mg/dL):</label>
+                    <input type="number" id="sugar" name="sugar" placeholder="e.g., 90">
+                </div>
+                <div class="form-group">
+                    <label for="cholesterol">Cholesterol Level (mg/dL):</label>
+                    <input type="number" id="cholesterol" name="cholesterol" placeholder="e.g., 200">
+                </div>
+                <div class="form-group">
+                    <label for="food-nutrition">Food Nutritional Value:</label>
+                    <input type="text" id="food-nutrition" name="food-nutrition" placeholder="e.g., High Sodium">
+                </div>
+                <button type="button" class="btn evaluate-button">Evaluate</button>
+            </form>
+
+            <div class="result">
+                <h4>Result:</h4>
+                <p id="evaluation-result">Your result will appear here.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact us: <a href="mailto:support@healthtracker.com">support@healthtracker.com</a></p>
+        <p>&copy; 2025 HealthTracker. All rights reserved.</p>
+    </footer>
+</body>
+</html>
